@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 /* Menu */
@@ -30,6 +31,34 @@ body {
 
 nav ul li:hover {
   color: hsl(35, 77%, 62%);
+}
+
+/* Moblie Menu */
+.moblie-menu {
+  display: none;
+}
+
+.menu-open {
+  display: none;
+}
+
+/* Trending */
+.trending-title {
+  color: hsl(5, 85%, 63%);
+}
+
+.trending {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+}
+
+.trending-news {
+  text-decoration: none;
+  color: white;
+}
+
+.trending-news:hover {
+  color: hsl(5, 85%, 63%);
 }
 
 /* Footer */
@@ -76,4 +105,22 @@ nav ul li:hover {
 #main-bottom-box {
   grid-column: 1 / 4;
   display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  .hidden {
+    display: none;
+  }
+
+  /* Menu */
+  .menu-open {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+  }
 }
