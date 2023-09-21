@@ -1,8 +1,43 @@
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+.main-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr 1fr 0.5fr);
+}
+
+/* NOTE Uncomment to apply border to individual grid items - looks janky though */
+/* .main-content-wrapper * {
+  border: 1px dashed black;
+} */
+
+#blocks-image {
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.main-header-bold {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#main-para-button-wrapper {
+  grid-column: 2 / 3;
+}
+
+#main-new-box {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+#main-bottom-box {
+  grid-column: 1 / 4;
+  display: flex;
 }
