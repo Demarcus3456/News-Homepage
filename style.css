@@ -1,33 +1,38 @@
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Menu */
-nav ul li {
-    list-style: none;
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  list-style: none;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 nav ul li:hover {
-    color: hsl(35, 77%, 62%);
+  color: hsl(35, 77%, 62%);
 }
 
-
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -37,6 +42,7 @@ nav ul li:hover {
   color: hsl(228, 45%, 44%);
 }
 
+/* Grid Settings */
 .main-content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
