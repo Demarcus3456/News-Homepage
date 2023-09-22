@@ -35,7 +35,8 @@ nav ul li:hover {
 }
 
 /* Moblie Menu */
-#moblie-menu {
+.moblie-menu,
+#menu-open {
   display: none;
 }
 
