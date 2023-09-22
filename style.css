@@ -44,7 +44,8 @@ nav ul li:hover {
 
 /* Moblie Menu */
 .moblie-menu,
-.menu-open {
+
+#menu-open {
   display: none;
 }
 
@@ -123,9 +124,11 @@ p {
   flex-direction: column;
   justify-content: space-around;
 }
+
 .main-paragraph {
   color: rgb(86, 86, 86);
 }
+
 /* Buttons */
 .read-more {
   padding: 1rem;
@@ -139,9 +142,11 @@ p {
   border: none;
   font-size: larger;
 }
+
 .read-more:hover {
   background-color: black;
 }
+
 /* on click the button size decreses */
 .read-more:active {
   transform: scale(0.95);
@@ -178,7 +183,7 @@ p {
   }
 
   /* Menu */
-  .menu-open {
+  #menu-open {
     display: block;
   }
 
@@ -186,6 +191,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    width: 75%;
+    height: 100%;
+    background-color: aqua;
     gap: 30px;
   }
 }
